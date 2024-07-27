@@ -1,0 +1,8 @@
+{
+  "tabWidth": 4,
+  "trailingComma": "es5",
+  "semi": false,
+  "useTabs": false,
+  "embeddedLanguageFormatting": "auto",
+  "vueIndentScriptAndStyle": false
+}
