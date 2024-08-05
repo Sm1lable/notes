@@ -147,7 +147,7 @@ new Promise((resolve, reject) => {
 })
     .then(() => {
         console.log("外部第一个then")
-        return new Promise((resolve, reject) => {
+        new Promise((resolve, reject) => {
             console.log("内部promise的同步执行")
             resolve()
         })

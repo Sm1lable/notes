@@ -1,17 +1,3 @@
-# 网络通信
-
-本章节介绍了前端开发中主要用到的网络通信技术，以及收纳了相关面试题
-
-## Cookie的字段
-
--   `name`: `cookie`的名称
--   `value`: `cookie`的值
--   `domain`: 可以访问到此`cookie`的域名
--   `path`: 可以访问到此`cookie`的页面路径
--   `expires/Max-age`: 超时时间，日期格式字符串或者时间戳
--   `size`: `cookie`的大小
--   `secure`: 设置是否只能通过`https`来传递此`cookie`
-
 ## 浏览器缓存
 
 ### 强缓存

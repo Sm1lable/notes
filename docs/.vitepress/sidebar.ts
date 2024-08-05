@@ -1,188 +1,162 @@
 const frontend_prefix = "/frontend"
 
 export const frontend = {
-    "/frontend/js/": [
+    "/devTech/frontend/": [
         {
-            text: "基础",
+            text: "JavaScript",
             collapsed: true,
             items: [
+                { text: "简介", link: "/devTech/frontend/JavaScript/index"},
                 {
-                    text: "数组",
-                    link: "/frontend/js/basic/Array",
-                },
-                {
-                    text: "对象",
-                    link: "/frontend/js/basic/Object",
-                },
-                {
-                    text: "函数",
-                    link: "/frontend/js/basic/Function",
-                },
-                {
-                    text: "字符串",
-                    link: "/frontend/js/basic/String",
-                },
-                {
-                    text: "变量和作用域",
-                    link: "/frontend/js/basic/Variables",
-                },
-            ],
-        },
-        {
-            text: "ES6特性",
-            collapsed: true,
-            items: [
-                { text: "基础特性", link: "/frontend/js/es6/基础特性" },
-                { text: "Promise", link: "/frontend/js/es6/Promise" },
-            ],
-        },
-        {
-            text: "进阶",
-            collapsed: true,
-            items: [
-                {
-                    text: "Web Workers",
-                    link: "/frontend/js/further/WebWorkers",
-                },
-                {
-                    text: "函数式编程",
-                    link: "/frontend/js/further/FunctionalProgramming",
-                },
-            ],
-        },
-    ],
-    "/frontend/vue/": [
-        {
-            text: "简介",
-            link: "/frontend/vue/index",
-        },
-        {
-            text: "设计思路",
-            link: "/frontend/vue/3_设计思路",
-        },
-        {
-            text: "响应系统",
-            collapsed: true,
-            items: [
-                {
-                    text: "响应系统的作用与实现",
-                    link: "/frontend/vue/4_响应系统实现",
-                },
-            ],
-        },
-    ],
-    "/frontend/network/": [],
-    "/frontend/react/": [
-        {
-            text: "绪论",
-            link: "/frontend/react/index",
-        },
-    ],
-    "/frontend/threejs": [
-        {
-            text: "快速开始",
-            link: "/frontend/threejs/index",
-        },
-    ],
-    "/frontend/tinyColor": [
-        {
-            text: "tinycolor颜色库简单接口文档",
-            link: "/frontend/tinyColor/index",
-        },
-    ],
-    "/frontend/d3": [
-        {
-            text: "快速开始",
-            link: "/frontend/d3/index",
-        },
-        {
-            text: "可视化",
-            collapsed: true,
-            items: [
-                {
-                    text: "力导向图",
+                    text: "基础",
                     collapsed: true,
                     items: [
                         {
-                            text: "力导向图模拟",
-                            links: "/frontend/d3/visualization/force/force",
+                            text: "数组",
+                            link: "/devTech/frontend/JavaScript/basic/Array",
                         },
-                    ],
+                        {
+                            text: "对象",
+                            link: "/devTech/frontend/JavaScript/basic/Object",
+                        },
+                        {
+                            text: "函数",
+                            link: "/devTech/frontend/JavaScript/basic/Function",
+                        },
+                        {
+                            text: "字符串",
+                            link: "/devTech/frontend/JavaScript/basic/String",
+                        },
+                        {
+                            text: "变量和作用域",
+                            link: "/devTech/frontend/JavaScript/basic/Variables",
+                        },
+                    ]
                 },
+                {
+                    text: "Promise",
+                    collapsed: true,
+                    items: [
+                        { text: "基本概念", link: '/devTech/frontend/JavaScript/promise/index'},
+                        { text: "手动实现", link: '/devTech/frontend/JavaScript/promise/implementation'},
+                    ]
+                }
             ],
         },
         {
-            text: "元素选择与渲染",
-            collaped: true,
+            text: "React",
+            collapsed: true,
             items: [
-                {
-                    text: "选择元素",
-                    links: "/frontend/d3/visualization/selection/selecting",
-                },
+                { text: "基础", link: "/devTech/frontend/React/index" },
+                { text: "redux", link: "/devTech/frontend/React/redux" },
             ],
         },
         {
-            text: "交互",
-            // collapsed: true,
+            text: "Vue",
+            collapsed: true,
             items: [
-                {
-                    text: "拖拽",
-                    link: "/frontend/d3/interaction/drag",
-                },
+                { text: "基础", link: "/devTech/frontend/Vue/index" },
+                { text: "设计思路", link: "/devTech/frontend/Vue/3_设计思路" },
+                { text: "响应式系统", link: "/devTech/frontend/Vue/4_响应式系统实现" },
+                { text: "vue-router", link: "/devTech/frontend/Vue/redux/vue-router" },
+                { text: "vue状态管理", link: "" },
             ],
+        },
+        {
+            text: "React-Native",
+            collapsed: true,
+            items: [
+                { text: "基础", link: "/devTech/frontend/React-Native/index" },
+            ],
+        },
+    ],
+    "/devTech/backend/": [
+        {
+            text: "node",
+            link: "/devTech/backend/node/index",
+        },
+        {
+            text: "Next",
+            link: "/devTech/backend/next/index",
+        },
+    ],
+    "/devTech/netTech/": [
+        {
+            text: "Nginx",
+            link: "/devTech/netTech/Nginx/index",
+        },
+    ],
+    "/devTech/engineer/": [
+        {
+            text: "构建工具",
+            link: "/devTech/engineer/buildTools/index",
+        },
+        {
+            text: "代码质量",
+            link: "/devTech/engineer/codeQuality/index",
         },
     ],
 }
 
-export const theories = {
-    "/theory/computer_network": [
+export const principle = {
+    "/principle": [
         {
-            text: "概述",
+            text: "计算机网络",
             collapsed: true,
             items: [
-                { text: "绪论", link: "theory/computer_network/index" },
-                {
-                    text: "交换方式",
-                    link: "theory/computer_network/introduction/switch",
-                },
+                { text: "绪论", link: "/principle/network/index" },
             ],
         },
-    ],
-    "/theory/compilation": [
-        { text: "绪论", link: "/theory/compilation/index" },
-        { text: "文法和语言", link: "/theory/compilation/grammer" },
-        { text: "上下文无关文法", link: "/theory/compilation/grammer_2" },
-    ],
+        {
+            text: "操作系统",
+            collapsed: true,
+            items: [
+                { text: "绪论", link: "/principle/os/index" },
+            ],
+        },
+        {
+            text: "浏览器",
+            collapsed: true,
+            items: [
+                { text: "绪论", link: "/principle/browser/index" },
+                { text: "浏览器缓存", link: "/principle/browser/cache" },
+                { text: "浏览器存储", link: "/principle/browser/store" },
+                { text: "web workers", link: "/principle/browser/WebWorkers" },
+                { text: "observer API", link: "/principle/browser/ObserverAPI" },
+            ],
+        },
+        {
+            text: "JS引擎",
+            collapsed: true,
+            items: [
+                { text: "绪论", link: "/principle/JSEngin/index" },
+            ],
+        },
+        {
+            text: "框架构建",
+            collapsed: true,
+            items: [
+                { text: "绪论", link: "/principle/frameBuild/index" },
+            ],
+        },
+    ]
 }
 
-export const dev = {
-    "dev/git": [
+export const practice = {
+    "/practice/JavaScriptPractice": [
         {
-            text: "git",
+            text: "设计模式",
             collapsed: true,
-            items: [{ text: "入门", link: "/dev/git/index" }],
+            items: [{ text: "绪论", link: "/practice/JavaScriptPractice/patterns/index" }],
         },
-    ],
-    "dev/question": [
         {
-            text: "开发解决方案",
+            text: "函数式编程",
             collapsed: true,
             items: [
-                { text: "1", link: "dev/question/index" },
-                { text: "懒加载", link: "dev/question/懒加载" },
+                { text: "入门", link: "/practice/JavaScriptPractice/FunctionalProgramming/index" }
             ],
         },
-    ],
-    "dev/exp": [
-        {
-            text: "代码经验",
-            link: "dev/exp/index",
-        },
-        {
-            text: "随记",
-            link: "dev/exp/casual",
-        },
-    ],
+    ]
 }
 
 export const questions = {

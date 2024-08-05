@@ -8,46 +8,89 @@ const dev = {
     text: "开发技术",
     items: [
         {
-            text: "前端基础",
+            text: "前端技术",
             items: [
-                { text: "HTML", link: "/frontend/html/index" },
-                { text: "CSS", link: "/frontend/css/index" },
-                { text: "JavaScript", link: "/frontend/js/index" },
-            ],
-        },
-        {
-            text: "前端框架",
-            items: [
-                { text: "React", link: "/frontend/react/index" },
-                { text: "VUE", link: "/frontend/vue/index" },
+                { text: "JavaScript", link: "/devTech/frontend/JavaScript/index"},
+                { text: "React", link: "/devTech/frontend/React/index"},
+                { text: "Vue", link: "/devTech/frontend/Vue/index"},
+                { text: "React-Native", link: "/devTech/frontend/React-Native/index"}
             ],
         },
         {
             text: "后端技术",
-            items: [{ text: "Node", link: "/frontend/node/index" }],
+            items: [
+                { text: "node", link: "/devTech/backend/node/index" },
+                { text: "VUE", link: "/devTech/backend/next/index" },
+            ],
         },
         {
-            text: "网络基础",
-            items: [{ text: "Web网络", link: "/frontend/web/index" }],
+            text: "网络技术",
+            items: [{ text: "Nginx", link: "/devTech/netTech/Nginx/index" }],
         },
+        {
+            text: "工程化",
+            items: [
+                { text: "构建工具", link: "/devTech/engineer/buildTools/index"},
+                { text: "代码质量", link: "/devTech/engineer/codeQuality/index"},
+                
+            ]
+        }
     ],
 }
 
-const engineer = {
-    text: "工程化",
-    items: [
 
+
+const principle = {
+    text: '知识储备',
+    items: [
+        {
+            text: "计算机网络",
+            link: "/principle/network/index"
+        },
+        {
+            text: "操作系统",
+            link: "/principle/os/index"
+        },
+        {
+            text: "浏览器",
+            link: "/principle/browser/index"
+        },
+        {
+            text: "JS引擎",
+            link: "/principle/JSEgin/index"
+        },
+        {
+            text: "框架构建",
+            link: "/principle/frameBuild/index"
+        },
     ]
 }
 
 const devPractice = {
-    text: '开发实践'
-
+    text: "开发实践",
+    items: [
+        {
+            text: "JavaScript开发实践",
+            items: [
+                {
+                    text: "设计模式",
+                    link: "/practice/JavaScriptPractice/patterns/index"
+                },
+                {
+                    text: "函数式编程",
+                    link: "/practice/JavaScriptPractice/FunctionalProgramming/index"
+                },
+            ]
+        }
+    ]
 }
+
 
 export default [
     resource,
     dev,
+    principle,
+    devPractice
 ]
 
 
