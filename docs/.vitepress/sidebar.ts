@@ -40,6 +40,13 @@ export const frontend = {
                         { text: "基本概念", link: '/devTech/frontend/JavaScript/promise/index'},
                         { text: "手动实现", link: '/devTech/frontend/JavaScript/promise/implementation'},
                     ]
+                },
+                {
+                    text: "Typescript",
+                    collapsed: true,
+                    items: [
+                        { text: "高级类型", link: '/devTech/frontend/Javascript/ts/complexType'}
+                    ]
                 }
             ],
         },
@@ -97,6 +104,14 @@ export const frontend = {
         },
     ],
 }
+
+
+export const side = [
+    {
+        text: ""
+    }
+]
+
 
 export const principle = {
     "/principle": [
