@@ -52,10 +52,10 @@ const compoesdFunc = compose(f, g, h)
 
 const res = composedFunc(5) // 执行 f(g(h(5)))
 
-console.log(res) // ((5-3)+2)^2 = 9
+console.log(res) // ((5-3)+2)^2 = 16
 ```
 
-函数组合满足结合律，只要整体调用顺序不变，结果就不会变。
+函数组合满足**结合律**，只要整体调用顺序不变，结果就不会变。
 下面是一个函数组合的简单实现
 
 ```js
@@ -102,8 +102,10 @@ const currilize = (func, arity = func.length, ...args) => {
         : currilize.bind(null, func, arity, ...args)
 }
 
+const curry = currilize((a, b, c) => a + b + c)
+
 const add1 = curry(1, 2)
-const add2 = curry(3)
+const add2 = add1(3)
 const add3 = curry(2, 3, 4)
 
 console.log(add1) // [Function bound curry]
