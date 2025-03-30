@@ -65,6 +65,7 @@ git push --set-upstream origin <name>
 
 ```bash
 git push origin <local-branch-name>:<remote-branch-name>
+git push origin --force <local-branch-name>:<remote-branch-name> # 强制推送
 ```
 
 **查看远程分支**
